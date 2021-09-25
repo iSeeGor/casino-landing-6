@@ -4,6 +4,11 @@
 	grid-template-columns: 1fr 1fr;
 	gap: 16px;
 	// padding: 0 34px;
+
+	@media (max-width: 767.98px){
+		
+		grid-template-columns: 1fr;
+	}
 }
 
 .bonus-card {
@@ -46,6 +51,7 @@
 		border-radius: 100%;
 		overflow: hidden;
 		margin-bottom: 26px;
+		
 	}
 
 	&__content {
@@ -76,26 +82,67 @@
 }
 
 @media (max-width: 1199.98px){
-	.bonus-grid {
-		gap: 28px;
+
+	.bonus-card {
+
+		padding: 30px 16px 16px;
+
+		&__image {
+
+			width: 180px;
+			height: 180px;
+		}
+
+		&__content {
+
+			gap: 14px;
+		} 
+
+		&__title {
+
+			font-size: 38px;
+		}
+
+		&__subtitle {
+
+			font-size: 32px;
+		}
 	}
 }
 
 @media (max-width: 991.98px){
 
-	.bonus-grid {
-		gap: 24px;
+	.bonus-card {
+
+		padding: 30px 16px 16px;
+
+		&__image {
+
+			width: 150px;
+			height: 150px;
+		}
+
+		&__content {
+
+			gap: 14px;
+		} 
+
+		&__title {
+
+			font-size: 32px;
+		}
+
+		&__subtitle {
+
+			font-size: 26px;
+		}
 	}
+
 }
 
 @media (max-width: 767.98px){
 
 	
-	.bonus-grid {
-
-		grid-template-columns: 1fr 1fr;
-		gap: 40px 22px;
-	}
 }
 
 @media (max-width: 575.98px){
@@ -106,19 +153,38 @@
 
 @media (max-width: 480.98px){
 
-	.bonus-grid {
-		grid-template-columns: 1fr;
-		gap: 40px 22px;
-	}
+
 	
 }
 
 @media (max-width: 374px){
 	
-	.bonus-grid {
-		gap: 30px 22px;
+
+		.bonus-card {
+
+		padding: 30px 16px 16px;
+
+		&__image {
+
+			width: 140px;
+			height: 140px;
+		}
+
+		&__content {
+
+			gap: 14px;
+		} 
+
+		&__title {
+
+			font-size: 28px;
+		}
+
+		&__subtitle {
+
+			font-size: 24px;
+		}
 	}
-	
 }
 
 @media (max-width: 350px){

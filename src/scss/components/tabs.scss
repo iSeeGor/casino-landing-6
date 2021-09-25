@@ -110,7 +110,7 @@
 
 		&__header {
 
-			margin-bottom: 30px;
+			padding: 20px 0 50px;
 		}
 
 		&__button {
@@ -133,8 +133,7 @@
 
 		&__header {
 
-			padding-left: 0;
-			padding-right: 0;
+			padding: 10px 0 40px;
 		}
 
 
@@ -161,6 +160,11 @@
 @media (max-width: 767.98px){
 	.tabs {
 
+		&__header {
+
+			padding: 5px 0 30px;
+		}
+
 		&__button {
 
 			font-size: 14px;
@@ -170,7 +174,7 @@
 				height: 70px;
 				width: 70px;
 				padding: 22px 22px;
-				border-radius: 15px;
+				margin-bottom: 10px;
 			}
 		}
 
@@ -192,6 +196,11 @@
 	
 	.tabs {
 
+		&__header {
+
+			padding: 5px 0 25px;
+		} 
+
 		&__button {
 
 			font-size: 13px;
@@ -201,7 +210,7 @@
 				height: 60px;
 				width: 60px;
 				padding: 16px 16px;
-				border-radius: 12px;
+				margin-bottom: 8px;
 			}
 		}
 

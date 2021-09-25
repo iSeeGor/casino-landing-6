@@ -71,13 +71,12 @@
 
 		&__link {
 
-			font-size: 22px;
-			padding: 12px 22px;
+			font-size: 14px;
 
 			img {
 
-				width: 32px;
-				height: 32px;
+				width: 30px;
+				height: 30px;
 			}
 		}
 	}
@@ -88,15 +87,18 @@
 	
 	.main-menu {
 
-		&__link {
+		&__list {
 
-			font-size: 18px;
-			padding: 10px 14px;
+			gap: 16px;
+		}
+
+		&__link {
+			font-size: 13px;
 
 			img {
 
-				width: 28px;
-				height: 28px;
+				width: 26px;
+				height: 26px;
 			}
 		}
 	}
@@ -107,9 +109,6 @@
 
 	.menu-section {
 
-		padding: 4px 0;
-		border-top: 1px solid #fff;
-    	border-bottom: 1px solid #fff;
 	}
 
 	.main-menu {
@@ -117,40 +116,23 @@
 		&__list {
 
 			white-space: nowrap;
-			overflow-x: scroll;
 			justify-content: space-around;
+			gap: 20px;
 		}
 	
 		&__link {
 
-			font-size: 16px;
-			padding: 8px 12px;
+			font-size: 12px;
 			flex-direction: column;
 
 			img {
 
 				margin-right: 0;
-				margin-bottom: 2px;
-				width: 26px;
-				height: 26px;
+				margin-bottom: 4px;
+				width: 22px;
+				height: 22px;
 			}
 		}
-	}
-
-	::-webkit-scrollbar {
-		-webkit-appearance: none;
-	}
-
-	::-webkit-scrollbar:horizontal {
-		height: 2px;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background-color: #e2dbb9;
-	}
-
-	::-webkit-scrollbar-track {
-		background-color: transparent;
 	}
 
 }
@@ -164,6 +146,8 @@
 
 	
 	.main-menu {
+
+		display: none;
 
 		&__list {
 

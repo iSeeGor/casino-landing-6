@@ -20,7 +20,8 @@
 		height: 100%;
 		
 
-		&::before {
+		&::before,
+		&::after {
 
 			content: '';
 			position: absolute;
@@ -34,6 +35,13 @@
 			transition: opacity $transition;
 			border-radius: 20px;
 		}
+
+		&::after {
+
+			opacity: 1;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+			background: transparent;
+		} 
 
 		img {
 
@@ -109,6 +117,12 @@
 	.game-card {
 
 		border-radius: 15px;
+
+		&__image::after, 
+		&__image::before {
+
+			border-radius: 15px;
+		}
 	}
 	
 }
@@ -118,6 +132,12 @@
 	.game-card {
 
 		border-radius: 12px;
+
+		&__image::after, 
+		&__image::before {
+
+			border-radius: 12px;
+		}
 	}
 	
 }
