@@ -1,0 +1,192 @@
+.menu-section {
+
+	background: $colorSky;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.399312);
+}
+
+.main-menu {
+
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+
+	&__list {
+
+		@include reset-list;
+		display: grid;
+		grid-auto-flow: column;
+		gap: 20px;
+		align-items: center;
+		justify-content: space-between;
+
+		li {
+
+			margin: 0;
+			padding: 0;
+			
+			&::before {
+				
+				display: none;
+			}
+		}
+	}
+
+	&__link {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		color: white;
+		font-family: $fontHeadings;
+		font-weight: $medium;
+		font-size: 14px;
+		line-height: 1;
+		text-transform: uppercase;
+		transition: all $transition;
+
+		img {
+
+			margin-right: 10px;
+			width: 32px;
+			height: 32px;
+		}
+
+		span {
+
+		}
+
+		&:hover {
+
+			text-decoration: none;
+			text-shadow: 0px 0px 3.86241px rgba(255, 255, 255, 0);
+		}
+	}
+}
+
+@media (max-width: 1199.98px){
+
+
+	.main-menu {
+
+		&__link {
+
+			font-size: 22px;
+			padding: 12px 22px;
+
+			img {
+
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991.98px){
+
+	
+	.main-menu {
+
+		&__link {
+
+			font-size: 18px;
+			padding: 10px 14px;
+
+			img {
+
+				width: 28px;
+				height: 28px;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 767.98px){
+
+	.menu-section {
+
+		padding: 4px 0;
+		border-top: 1px solid #fff;
+    	border-bottom: 1px solid #fff;
+	}
+
+	.main-menu {
+
+		&__list {
+
+			white-space: nowrap;
+			overflow-x: scroll;
+			justify-content: space-around;
+		}
+	
+		&__link {
+
+			font-size: 16px;
+			padding: 8px 12px;
+			flex-direction: column;
+
+			img {
+
+				margin-right: 0;
+				margin-bottom: 2px;
+				width: 26px;
+				height: 26px;
+			}
+		}
+	}
+
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+
+	::-webkit-scrollbar:horizontal {
+		height: 2px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: #e2dbb9;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+
+}
+
+@media (max-width: 575.98px){
+
+	.menu-section {
+
+		padding: 2px 0;
+	}
+
+	
+	.main-menu {
+
+		&__list {
+
+			justify-content: space-between;
+		}
+
+		&__link {
+
+			font-size: 14px;
+			padding: 6px 10px;
+
+			img {
+
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480.98px){
+}
+@media (max-width: 374px){
+}
+@media (max-width: 350px){
+}
